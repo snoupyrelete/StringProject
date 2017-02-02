@@ -11,6 +11,11 @@
 
 using namespace std;
 
+StringController :: StringController()
+{
+    
+}
+
 void StringController::start()
 {
     string emptyString = "";
