@@ -9,18 +9,21 @@
 #include <iostream>
 #include "StringController.hpp"
 
-using namespace std;
 
 StringController :: StringController()
 {
+    emptyString = "";
+    fullString = "blaegh";
+}
+
+void StringController :: start()
+{
+    numberMethods();
     
 }
 
-void StringController::start()
+void StringController :: numberMethods()
 {
-    string emptyString = "";
-    string fullString = "blaegh";
-    
     // empty() returns 0 if not empty and 1 if it is empty.
     // Empty
     cout << "the empty string is: " <<emptyString.empty() << endl;
