@@ -14,12 +14,41 @@ StringController :: StringController()
 {
     emptyString = "";
     fullString = "blaegh";
+    
+    // create double and int array
+    
+//    int * name;
+//    name = new int[5];
+//    
+    int intArray[5];
+    
+    intArray[2] = 3;
+    
+    cout << "@ the 2nd index of the array, the value is: " << intArray[2] << endl;
+    cout << "@ the 4th index of the array (unset value) the value is: " << intArray[4] << endl;
+    cout << "\n" << endl;
+    
+    this->doubleSize = 5;
+    this->doubleArray = new double[doubleSize];
+    buildArray();
+    cout << "\n" << endl;
+    
+    
 }
 
 void StringController :: start()
 {
     numberMethods();
     
+}
+
+void StringController :: buildArray()
+{
+    for (int iterator = 0; iterator < doubleSize; iterator++)
+    {
+        doubleArray[iterator] = iterator * 2;
+        cout << "@ the " << iterator << " index of the array, the value is: " << doubleArray[iterator] << endl;
+    }
 }
 
 void StringController :: numberMethods()

@@ -15,6 +15,10 @@ using namespace std;
 class StringController
 {
 private:
+    double * doubleArray;
+    int doubleSize;
+    void buildArray();
+    
     string emptyString;
     string fullString;
     void numberMethods();
